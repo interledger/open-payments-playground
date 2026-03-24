@@ -41,8 +41,8 @@ npm install
 npm run dev
 ```
 This command does two things:
-- Runs `ts-node scripts/generate-schemas.ts`, which generates the latest schemas and TypeScript types from the definitions in `openapi`. It puts these files in the `public/schemas` folder and the `types` folder respectively.
-- Starts the development server so you can view the demo.
+- Runs `tsx scripts/generate-schemas.ts`, which generates the latest schemas and TypeScript types from the definitions in `openapi`. It puts these files in the `public/schemas` folder and the `types` folder respectively.
+- Starts the development server with `tsx watch`, so changes to `.ts` files auto-restart the server.
 
 The server will start on `http://localhost:3001`
 
